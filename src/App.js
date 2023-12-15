@@ -12,6 +12,8 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useState, useCallback, useEffect, useRef } from 'react';
 import { useInView, motion, useTransform, useScroll } from 'framer-motion';
 
+import Stats from './components/stats';
+
 function Section({ children }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -41,7 +43,7 @@ function App() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav>
               <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#gallery">Galería</a></li>
-              <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#info">Información</a></li>
+              <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#info">Características</a></li>
               <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#contact">Contacto</a></li>
             </Nav>
           </Navbar.Collapse>
@@ -53,21 +55,13 @@ function App() {
           <Section>
             <div className={`resume-section-content`}>
               <h1>LIANA <span className="text-primary">UNANYAN</span></h1>
-              <p>Lorem
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
             </div>
           </Section>
         </section>
 
         <section className="resume-section" id="info">
           <Section>
-            <div className={`resume-section-content`}>
-              <h1 className="mb-5">Información</h1>
-              <p>Lorem
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
+            <Stats />
           </Section>
         </section>
         

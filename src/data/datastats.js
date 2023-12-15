@@ -6,9 +6,9 @@ export default [{
   eyes: 'Brown',
   height: '1,62 m',
   bust: '85',
-  hips: '61',
+  waist: '61',
   hips: '92',
-  shoe: '1,62 m',
+  shoe: '37',
   languages: [
     'Ruso: bilingüe',
     'Español: bilingüe',
