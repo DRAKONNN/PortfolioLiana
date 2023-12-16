@@ -16,11 +16,13 @@ function Stats(props) {
   return (
     <div className="resume-section-content">
       <div className="row pb-5">
-        <div className="col-8">
-        </div>
-        <div className="col-4">
-          <h4 className="">Características</h4>
-          <table class="table table-light table-striped table-hover border-rounded">
+        <div className="container">
+          <table class="table table-light table-striped table-hover border-rounded table-stats">
+            <thead class="table-dark">
+              <tr>
+                <th colspan="2">Características</th>
+              </tr>
+            </thead>
             <tbody>
               <tr>
                 <th scope="row">Pelo</th>
