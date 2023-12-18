@@ -3,6 +3,7 @@
 body {
   margin: 0;
   font-family: 'Archivo Black', sans-serif;
+  background-color: rgb(238, 231, 237) !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -24,6 +25,58 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   overflow: hidden;
 }
 
+.navbar-custom {
+  margin: 0;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.banner {
+  position: relative;
+  height: 100vh;
+  color: white;
+}
+
+.bg-image {
+  background: url('C:\Users\rafiu\portfolio-liana\public\images\Liana_Red_Banner.jpg') center/cover no-repeat;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animated-text-right {
+  opacity: 0;
+  animation: slideIn 2s forwards;
+  font-size: 4rem;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animated-text-left {
+  opacity: 0;
+  animation: slideOut 2s forwards;
+  font-size: 4rem;
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
 .container-stats {
   max-height: 400px;

@@ -12,6 +12,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useState, useCallback, useEffect, useRef } from 'react';
 import { useInView, motion, useTransform, useScroll } from 'framer-motion';
 
+import Banner from './components/banner';
 import Stats from './components/stats';
 
 function Section({ children }) {
@@ -36,7 +37,7 @@ function Section({ children }) {
 function App() {
   return (
     <div className="App">
-      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary navbar-custom">
         <Container>
           <Navbar.Brand href="#home">LIANA UNANYAN</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -50,12 +51,16 @@ function App() {
         </Container>
       </Navbar>
 
+      <section className="mb-5" id="banner">
+        <Section>
+          <Banner />
+        </Section>
+      </section>
+      
       <div className="container-fluid">
-        <section className="resume-section d-flex" id="gallery">
+        <section className="resume-section" id="gallery">
           <Section>
-            <div className={`resume-section-content`}>
-              <h1>LIANA <span className="text-primary">UNANYAN</span></h1>
-            </div>
+            
           </Section>
         </section>
 
