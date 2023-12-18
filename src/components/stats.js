@@ -15,12 +15,12 @@ function Stats(props) {
   
   return (
     <div className="">
-      <div className="row gy-5 pb-4" style={{height: 400}}>  
+      <div className="row gy-5" style={{height: 400}}>  
           <div className="col-lg-3">
-            <img src="/images/Liana_Winter.JPG" alt="Liana" className="border-rounded img-fluid" />
+            <img src="/images/Liana_Winter.JPG" alt="Liana" className="border-rounded img-fluid hover-zoom" />
           </div>
           <div className="col-lg-3">
-            <img src="/images/Liana_Winter2.JPG" alt="Liana" className="border-rounded img-fluid" />
+            <img src="/images/Liana_Winter2.JPG" alt="Liana" className="border-rounded img-fluid hover-zoom" />
           </div>
           <div className="col-lg-6">
             <table class="table table-light table-striped table-hover border-rounded table-stats">

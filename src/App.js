@@ -64,13 +64,13 @@ function App() {
           </Section>
         </section>
 
-        <section className="resume-section" id="info">
+        <section className="resume-section mb-5" id="info">
           <Section>
             <Stats />
           </Section>
         </section>
         
-        <section className="resume-section" id="contact">
+        <section className="resume-section mb-2" id="contact">
           <Section>
             
           </Section>
