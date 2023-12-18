@@ -40,7 +40,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 .bg-image {
-  background: url('C:\Users\rafiu\portfolio-liana\public\images\Liana_Red_banner.jpg') center/cover no-repeat;
+  background: url('/src/assets/images/Liana_Red_banner.jpg') center/cover no-repeat;
   height: 100%;
   display: flex;
   align-items: center;
