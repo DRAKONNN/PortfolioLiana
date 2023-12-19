@@ -13,6 +13,7 @@ import { useState, useCallback, useEffect, useRef } from 'react';
 import { useInView, motion, useTransform, useScroll } from 'framer-motion';
 
 import Banner from './components/banner';
+import Gallery from './components/gallery';
 import Stats from './components/stats';
 
 function Section({ children }) {
@@ -44,7 +45,7 @@ function App() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav>
               <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#gallery">Galería</a></li>
-              <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#info">Características</a></li>
+              <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#stats">Características</a></li>
               <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#contact">Contacto</a></li>
             </Nav>
           </Navbar.Collapse>
@@ -58,13 +59,13 @@ function App() {
       </section>
       
       <div className="container-fluid">
-        <section className="resume-section" id="gallery">
+        <section className="resume-section mb-5" id="gallery">
           <Section>
-            
+            <Gallery />
           </Section>
         </section>
 
-        <section className="resume-section mb-5" id="info">
+        <section className="resume-section mb-5" id="stats">
           <Section>
             <Stats />
           </Section>
@@ -72,7 +73,7 @@ function App() {
         
         <section className="resume-section mb-2" id="contact">
           <Section>
-            
+            <p>sdsdsd</p>
           </Section>
         </section>    
       </div>

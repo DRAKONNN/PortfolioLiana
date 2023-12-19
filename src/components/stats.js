@@ -15,7 +15,7 @@ function Stats(props) {
   
   return (
     <div className="">
-      <div className="row gy-5" style={{height: 400}}>  
+      <div className="row gy-5">  
           <div className="col-lg-3">
             <img src="/images/Liana_Winter.JPG" alt="Liana" className="border-rounded img-fluid hover-zoom" />
           </div>
