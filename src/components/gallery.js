@@ -4,8 +4,31 @@ import { useState, useCallback, useEffect, useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
+import html2canvas from 'html2canvas';
+
 
 const Gallery = () => {
+
+  const descargarImagenes = () => {
+    // Aquí deberías proporcionar las URLs de las imágenes que quieres descargar
+    const imagenesUrls = [
+      '/images/Liana_Main_2023.JPG',
+      '/images/Liana_Main_2023_2.JPG',
+      '/images/Liana_Main_2023_3.JPG',
+      '/images/Liana_Main2.JPG',
+    ];
+
+    // Itera sobre las URLs y descarga cada imagen
+    imagenesUrls.forEach((url, index) => {
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = `Liana_${index + 1}.jpg`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+  };
+
   return (
     <div>
     <h2>GALERÍA</h2>
@@ -33,6 +56,9 @@ const Gallery = () => {
           <span className="carousel-control-next-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Next</span>
         </button>
+        <div class="d-flex justify-content-end">
+          <button type="button" class="btn btn-danger btn-sm mt-1" onClick={descargarImagenes}><i class='fas fa-download'></i> Descargar catálogo</button>
+        </div>
       </div>
 
       <div id="gallery2022" className="carousel slide col-lg-4" data-bs-ride="carousel">
@@ -58,6 +84,9 @@ const Gallery = () => {
           <span className="carousel-control-next-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Next</span>
         </button>
+        <div class="d-flex justify-content-end">
+          <button type="button" class="btn btn-danger btn-sm mt-1"><i class='fas fa-download'></i> Descargar catálogo</button>
+        </div>
       </div>
 
       <div id="gallery2021" className="carousel slide col-lg-4" data-bs-ride="carousel">
@@ -83,6 +112,9 @@ const Gallery = () => {
           <span className="carousel-control-next-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Next</span>
         </button>
+        <div class="d-flex justify-content-end">
+          <button type="button" class="btn btn-danger btn-sm mt-1" id="descargarCatalogo"><i class='fas fa-download'></i> Descargar catálogo</button>
+        </div>
       </div>
     </div>
     </div>
