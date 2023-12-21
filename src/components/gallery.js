@@ -22,7 +22,7 @@ const Gallery = () => {
 
   return (
     <div>
-      <h2 className="color-transition-insta">GALERÍA</h2>
+      <h2 className="color-transition">GALERÍA</h2>
       <div className="row gy-5">
         <div id="gallery2023" className="carousel slide col-lg-4" data-bs-ride="carousel">
           <div className="carousel-inner border-rounded">
