@@ -22,140 +22,140 @@ const Gallery = () => {
 
   return (
     <div>
-    <h2>GALERÍA</h2>
-    <div className="row gy-5">
-      <div id="gallery2023" className="carousel slide col-lg-4" data-bs-ride="carousel">
-        <div className="carousel-inner border-rounded">
-          <div className="carousel-item active">
-            <img src="/images/Liana_Main_2023.JPG" className="d-block w-100" alt="Liana 2023" />
+      <h2 className="color-transition-insta">GALERÍA</h2>
+      <div className="row gy-5">
+        <div id="gallery2023" className="carousel slide col-lg-4" data-bs-ride="carousel">
+          <div className="carousel-inner border-rounded">
+            <div className="carousel-item active">
+              <img src="/images/Liana_Main_2023.JPG" className="d-block w-100" alt="Liana 2023" />
+            </div>
+            <div className="carousel-item">
+              <img src="/images/Liana_Main_2023_2.JPG" className="d-block w-100" alt="Liana 2023" />
+            </div>
+            <div className="carousel-item">
+              <img src="/images/Liana_Main_2023_3.JPG" className="d-block w-100" alt="Liana 2023" />
+            </div>
+            <div className="carousel-item">
+              <img src="/images/Liana_Main2.JPG" className="d-block w-100" alt="Liana 2023" />
+            </div>
           </div>
-          <div className="carousel-item">
-            <img src="/images/Liana_Main_2023_2.JPG" className="d-block w-100" alt="Liana 2023" />
-          </div>
-          <div className="carousel-item">
-            <img src="/images/Liana_Main_2023_3.JPG" className="d-block w-100" alt="Liana 2023" />
-          </div>
-          <div className="carousel-item">
-            <img src="/images/Liana_Main2.JPG" className="d-block w-100" alt="Liana 2023" />
-          </div>
+          <button className="carousel-control-prev" type="button" data-bs-target="#gallery2023" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button className="carousel-control-next" type="button" data-bs-target="#gallery2023" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+          </button>
+          <div class="d-flex justify-content-end">
+              <button
+                type="button"
+                class="btn btn-danger btn-sm mt-1"
+                onClick={() =>
+                  descargarImagenes(
+                    [
+                      '/images/Liana_Main_2023.JPG',
+                      '/images/Liana_Main_2023_2.JPG',
+                      '/images/Liana_Main_2023_3.JPG',
+                      '/images/Liana_Main2.JPG',
+                    ],
+                    'Liana_2023'
+                  )
+                }
+              >
+                <i class='fas fa-download'></i> Descargar catálogo 2023
+              </button>
+            </div>
         </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="#gallery2023" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#gallery2023" data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
-        <div class="d-flex justify-content-end">
-            <button
-              type="button"
-              class="btn btn-danger btn-sm mt-1"
-              onClick={() =>
-                descargarImagenes(
-                  [
-                    '/images/Liana_Main_2023.JPG',
-                    '/images/Liana_Main_2023_2.JPG',
-                    '/images/Liana_Main_2023_3.JPG',
-                    '/images/Liana_Main2.JPG',
-                  ],
-                  'Liana_2023'
-                )
-              }
-            >
-              <i class='fas fa-download'></i> Descargar catálogo 2023
-            </button>
-          </div>
-      </div>
 
-      <div id="gallery2022" className="carousel slide col-lg-4" data-bs-ride="carousel">
-        <div className="carousel-inner border-rounded">
-          <div className="carousel-item active">
-            <img src="/images/Liana_2022.png" className="d-block w-100" alt="Liana 2022" />
+        <div id="gallery2022" className="carousel slide col-lg-4" data-bs-ride="carousel">
+          <div className="carousel-inner border-rounded">
+            <div className="carousel-item active">
+              <img src="/images/Liana_2022.png" className="d-block w-100" alt="Liana 2022" />
+            </div>
+            <div className="carousel-item">
+              <img src="/images/Liana_2022_2.png" className="d-block w-100" alt="Liana 2022" />
+            </div>
+            <div className="carousel-item">
+              <img src="/images/Liana_2022_3.png" className="d-block w-100" alt="Liana 2022" />
+            </div>
+            <div className="carousel-item">
+              <img src="/images/Liana_2022_4.png" className="d-block w-100" alt="Liana 2022" />
+            </div>
           </div>
-          <div className="carousel-item">
-            <img src="/images/Liana_2022_2.png" className="d-block w-100" alt="Liana 2022" />
-          </div>
-          <div className="carousel-item">
-            <img src="/images/Liana_2022_3.png" className="d-block w-100" alt="Liana 2022" />
-          </div>
-          <div className="carousel-item">
-            <img src="/images/Liana_2022_4.png" className="d-block w-100" alt="Liana 2022" />
-          </div>
+          <button className="carousel-control-prev" type="button" data-bs-target="#gallery2022" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button className="carousel-control-next" type="button" data-bs-target="#gallery2022" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+          </button>
+          <div class="d-flex justify-content-end">
+              <button
+                type="button"
+                class="btn btn-danger btn-sm mt-1"
+                onClick={() =>
+                  descargarImagenes(
+                    [
+                      '/images/Liana_2022.png',
+                      '/images/Liana_2022_2.png',
+                      '/images/Liana_2022_3.png',
+                      '/images/Liana_2022_4.png',
+                    ],
+                    'Liana_2022'
+                  )
+                }
+              >
+                <i class='fas fa-download'></i> Descargar catálogo 2022
+              </button>
+            </div>
         </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="#gallery2022" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#gallery2022" data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
-        <div class="d-flex justify-content-end">
-            <button
-              type="button"
-              class="btn btn-danger btn-sm mt-1"
-              onClick={() =>
-                descargarImagenes(
-                  [
-                    '/images/Liana_2022.png',
-                    '/images/Liana_2022_2.png',
-                    '/images/Liana_2022_3.png',
-                    '/images/Liana_2022_4.png',
-                  ],
-                  'Liana_2022'
-                )
-              }
-            >
-              <i class='fas fa-download'></i> Descargar catálogo 2022
-            </button>
-          </div>
-      </div>
 
-      <div id="gallery2021" className="carousel slide col-lg-4" data-bs-ride="carousel">
-        <div className="carousel-inner border-rounded">
-          <div className="carousel-item active">
-            <img src="/images/Liana_Cliff_2021.JPG" className="d-block w-100" alt="Liana 2022" />
+        <div id="gallery2021" className="carousel slide col-lg-4" data-bs-ride="carousel">
+          <div className="carousel-inner border-rounded">
+            <div className="carousel-item active">
+              <img src="/images/Liana_Cliff_2021.JPG" className="d-block w-100" alt="Liana 2022" />
+            </div>
+            <div className="carousel-item">
+              <img src="/images/Liana_Cliff_2021_1.JPG" className="d-block w-100" alt="Liana 2022" />
+            </div>
+            <div className="carousel-item">
+              <img src="/images/Liana_Cliff_2021_2.JPG" className="d-block w-100" alt="Liana 2022" />
+            </div>
+            <div className="carousel-item">
+              <img src="/images/Liana_Cliff_2021_3.JPG" className="d-block w-100" alt="Liana 2022" />
+            </div>
           </div>
-          <div className="carousel-item">
-            <img src="/images/Liana_Cliff_2021_1.JPG" className="d-block w-100" alt="Liana 2022" />
-          </div>
-          <div className="carousel-item">
-            <img src="/images/Liana_Cliff_2021_2.JPG" className="d-block w-100" alt="Liana 2022" />
-          </div>
-          <div className="carousel-item">
-            <img src="/images/Liana_Cliff_2021_3.JPG" className="d-block w-100" alt="Liana 2022" />
-          </div>
+          <button className="carousel-control-prev" type="button" data-bs-target="#gallery2021" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button className="carousel-control-next" type="button" data-bs-target="#gallery2021" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+          </button>
+          <div class="d-flex justify-content-end">
+              <button
+                type="button"
+                class="btn btn-danger btn-sm mt-1"
+                onClick={() =>
+                  descargarImagenes(
+                    [
+                      '/images/Liana_Cliff_2021.JPG',
+                      '/images/Liana_Cliff_2021_1.JPG',
+                      '/images/Liana_Cliff_2021_2.JPG',
+                      '/images/Liana_Cliff_2021_3.JPG',
+                    ],
+                    'Liana_2021'
+                  )
+                }
+              >
+                <i class='fas fa-download'></i> Descargar catálogo 2021
+              </button>
+            </div>
         </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="#gallery2021" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#gallery2021" data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
-        <div class="d-flex justify-content-end">
-            <button
-              type="button"
-              class="btn btn-danger btn-sm mt-1"
-              onClick={() =>
-                descargarImagenes(
-                  [
-                    '/images/Liana_Cliff_2021.JPG',
-                    '/images/Liana_Cliff_2021_1.JPG',
-                    '/images/Liana_Cliff_2021_2.JPG',
-                    '/images/Liana_Cliff_2021_3.JPG',
-                  ],
-                  'Liana_2021'
-                )
-              }
-            >
-              <i class='fas fa-download'></i> Descargar catálogo 2021
-            </button>
-          </div>
       </div>
-    </div>
     </div>
   );
 };

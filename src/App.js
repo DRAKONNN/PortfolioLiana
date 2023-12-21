@@ -45,7 +45,7 @@ function App() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav>
               <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#gallery">Galería</a></li>
-              <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#stats">Características</a></li>
+              <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#stats">Sobre mí</a></li>
               <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#contact">Contacto</a></li>
             </Nav>
           </Navbar.Collapse>
