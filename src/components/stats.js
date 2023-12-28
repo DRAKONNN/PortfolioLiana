@@ -18,13 +18,13 @@ function Stats(props) {
       <h2 className="color-transition-insta">SOBRE MÍ</h2>
       <div className="row gy-5">  
           <div className="col-lg-3">
-            <img src="/images/Liana_Winter.JPG" alt="Liana" className="border-rounded img-fluid hover-zoom" />
+            <img src="/images/Liana_Winter.JPG" alt="Liana" className="border-rounded img-fluid hover-zoom shadow-box" />
           </div>
           <div className="col-lg-3">
-            <img src="/images/Liana_Winter2.JPG" alt="Liana" className="border-rounded img-fluid hover-zoom" />
+            <img src="/images/Liana_Winter2.JPG" alt="Liana" className="border-rounded img-fluid hover-zoom shadow-box" />
           </div>
           <div className="col-lg-6">
-            <table class="table table-light table-striped table-hover border-rounded table-stats">
+            <table class="table table-light table-striped table-hover border-rounded table-stats shadow-box">
               <thead class="table-dark">
                 <tr>
                   <th colspan="2">Características</th>

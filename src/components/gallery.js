@@ -25,7 +25,7 @@ const Gallery = () => {
       <h2 className="color-transition">GALERÍA</h2>
       <div className="row gy-5">
         <div id="gallery2023" className="carousel slide col-lg-4" data-bs-ride="carousel">
-          <div className="carousel-inner border-rounded">
+          <div className="carousel-inner border-rounded shadow-box">
             <div className="carousel-item active">
               <img src="/images/Liana_Main_2023.JPG" className="d-block w-100" alt="Liana 2023" />
             </div>
@@ -69,7 +69,7 @@ const Gallery = () => {
         </div>
 
         <div id="gallery2022" className="carousel slide col-lg-4" data-bs-ride="carousel">
-          <div className="carousel-inner border-rounded">
+          <div className="carousel-inner border-rounded shadow-box">
             <div className="carousel-item active">
               <img src="/images/Liana_2022.png" className="d-block w-100" alt="Liana 2022" />
             </div>
@@ -113,7 +113,7 @@ const Gallery = () => {
         </div>
 
         <div id="gallery2021" className="carousel slide col-lg-4" data-bs-ride="carousel">
-          <div className="carousel-inner border-rounded">
+          <div className="carousel-inner border-rounded shadow-box">
             <div className="carousel-item active">
               <img src="/images/Liana_Cliff_2021.JPG" className="d-block w-100" alt="Liana 2022" />
             </div>

@@ -12,10 +12,10 @@ function Contact(props) {
       <h2 className="color-transition-insta">CONTACTO</h2>
       <div className="row gy-5">  
           <div className="col-lg-3">
-            <img src="/images/Liana_2021.JPG" alt="Liana" className="border-rounded img-fluid hover-zoom" />
+            <img src="/images/Liana_2021.JPG" alt="Liana" className="border-rounded img-fluid hover-zoom shadow-box" />
           </div>
           <div className="col-lg-3">
-            <img src="/images/Liana_2020_3.JPG" alt="Liana" className="border-rounded img-fluid hover-zoom" />
+            <img src="/images/Liana_2020_3.JPG" alt="Liana" className="border-rounded img-fluid hover-zoom shadow-box" />
           </div>
           <div className="col-lg-6">
             <h2 className="mt-4"><i class='fas fa-map-marker-alt'></i> Madrid, 28006, España</h2>

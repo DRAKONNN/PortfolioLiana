@@ -156,3 +156,18 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   width: 100%;
   height: 400px;
 }
+
+/*
+* ===== Shadowing =====
+*/
+.shadow-item {
+  -webkit-box-shadow: 2px 4px 12px 2px rgba(0,0,0,0.62);
+  -moz-box-shadow: 2px 4px 12px 2px rgba(0,0,0,0.62);
+  box-shadow: 2px 4px 12px 2px rgba(0,0,0,0.62);
+}
+
+.shadow-box {
+  -webkit-box-shadow: 14px 14px 22px -8px rgba(0,0,0,0.5);
+  -moz-box-shadow: 14px 14px 22px -8px rgba(0,0,0,0.5);
+  box-shadow: 14px 14px 22px -8px rgba(0,0,0,0.5);
+}
