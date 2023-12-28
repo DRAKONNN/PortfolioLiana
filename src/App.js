@@ -15,6 +15,7 @@ import { useInView, motion, useTransform, useScroll } from 'framer-motion';
 import Banner from './components/banner';
 import Gallery from './components/gallery';
 import Stats from './components/stats';
+import Contact from './components/contact';
 
 function Section({ children }) {
   const ref = useRef(null);
@@ -73,7 +74,7 @@ function App() {
         
         <section className="resume-section mb-2" id="contact">
           <Section>
-            <p>sdsdsd</p>
+            <Contact />
           </Section>
         </section>    
       </div>
