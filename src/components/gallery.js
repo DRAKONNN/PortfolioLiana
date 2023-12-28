@@ -4,6 +4,8 @@ import { useState, useCallback, useEffect, useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
+import Tooltip from '@mui/material/Tooltip';
+
 import html2canvas from 'html2canvas';
 
 const Gallery = () => {
@@ -47,25 +49,29 @@ const Gallery = () => {
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
             <span className="visually-hidden">Next</span>
           </button>
-          <div class="d-flex justify-content-end">
-              <button
-                type="button"
-                class="btn btn-danger btn-sm mt-1"
-                onClick={() =>
-                  descargarImagenes(
-                    [
-                      '/images/Liana_Main_2023.JPG',
-                      '/images/Liana_Main_2023_2.JPG',
-                      '/images/Liana_Main_2023_3.JPG',
-                      '/images/Liana_Main2.JPG',
-                    ],
-                    'Liana_2023'
-                  )
-                }
-              >
-                <i class='fas fa-download'></i> Descargar catálogo 2023
-              </button>
-            </div>
+          <div class="d-flex justify-content-center">
+            <Tooltip title="Descargar catálogo 2023" placement="bottom" arrow>
+              <span>
+                <button
+                  type="button"
+                  class="btn btn-danger btn-sm mt-3"
+                  onClick={() =>
+                    descargarImagenes(
+                      [
+                        '/images/Liana_Main_2023.JPG',
+                        '/images/Liana_Main_2023_2.JPG',
+                        '/images/Liana_Main_2023_3.JPG',
+                        '/images/Liana_Main2.JPG',
+                      ],
+                      'Liana_2023'
+                    )
+                  }
+                >
+                  <i class='fas fa-download'></i>
+                </button>
+              </span>
+            </Tooltip>
+          </div>
         </div>
 
         <div id="gallery2022" className="carousel slide col-lg-4" data-bs-ride="carousel">
@@ -91,25 +97,29 @@ const Gallery = () => {
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
             <span className="visually-hidden">Next</span>
           </button>
-          <div class="d-flex justify-content-end">
-              <button
-                type="button"
-                class="btn btn-danger btn-sm mt-1"
-                onClick={() =>
-                  descargarImagenes(
-                    [
-                      '/images/Liana_2022.png',
-                      '/images/Liana_2022_2.png',
-                      '/images/Liana_2022_3.png',
-                      '/images/Liana_2022_4.png',
-                    ],
-                    'Liana_2022'
-                  )
-                }
-              >
-                <i class='fas fa-download'></i> Descargar catálogo 2022
-              </button>
-            </div>
+          <div class="d-flex justify-content-center">
+            <Tooltip title="Descargar catálogo 2022" placement="bottom" arrow>
+              <span>
+                <button
+                  type="button"
+                  class="btn btn-danger btn-sm mt-3"
+                  onClick={() =>
+                    descargarImagenes(
+                      [
+                        '/images/Liana_2022.png',
+                        '/images/Liana_2022_2.png',
+                        '/images/Liana_2022_3.png',
+                        '/images/Liana_2022_4.png',
+                      ],
+                      'Liana_2022'
+                    )
+                  }
+                >
+                  <i class='fas fa-download'></i>
+                </button>
+              </span>
+            </Tooltip>
+          </div>
         </div>
 
         <div id="gallery2021" className="carousel slide col-lg-4" data-bs-ride="carousel">
@@ -135,25 +145,29 @@ const Gallery = () => {
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
             <span className="visually-hidden">Next</span>
           </button>
-          <div class="d-flex justify-content-end">
-              <button
-                type="button"
-                class="btn btn-danger btn-sm mt-1"
-                onClick={() =>
-                  descargarImagenes(
-                    [
-                      '/images/Liana_Cliff_2021.JPG',
-                      '/images/Liana_Cliff_2021_1.JPG',
-                      '/images/Liana_Cliff_2021_2.JPG',
-                      '/images/Liana_Cliff_2021_3.JPG',
-                    ],
-                    'Liana_2021'
-                  )
-                }
-              >
-                <i class='fas fa-download'></i> Descargar catálogo 2021
-              </button>
-            </div>
+          <div class="d-flex justify-content-center">
+            <Tooltip title="Descargar catálogo 2021" placement="bottom" arrow>
+              <span>
+                <button
+                  type="button"
+                  class="btn btn-danger btn-sm mt-3"
+                  onClick={() =>
+                    descargarImagenes(
+                      [
+                        '/images/Liana_Cliff_2021.JPG',
+                        '/images/Liana_Cliff_2021_1.JPG',
+                        '/images/Liana_Cliff_2021_2.JPG',
+                        '/images/Liana_Cliff_2021_3.JPG',
+                      ],
+                      'Liana_2021'
+                    )
+                  }
+                >
+                  <i class='fas fa-download'></i>
+                </button>
+              </span>
+            </Tooltip>
+          </div>
         </div>
       </div>
     </div>
