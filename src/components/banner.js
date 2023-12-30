@@ -11,14 +11,13 @@ const Banner = () => {
   return (
     <header className="banner">
       <div className="bg-image">
-        <Container>
-          <Row>
-            <Col className="text-center text-white">
+        
+        <div className="container-fluid">
+          <div className="row gy-5">
               <h1 className="animated-text-right">LIANA</h1>
               <h1 className="animated-text-left">UNANYAN</h1>
-            </Col>
-          </Row>
-        </Container>
+          </div>
+        </div>
       </div>
     </header>
   );

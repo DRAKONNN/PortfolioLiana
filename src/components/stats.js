@@ -24,7 +24,7 @@ function Stats(props) {
             <img src="/images/Liana_Winter2.JPG" alt="Liana" className="border-rounded img-fluid hover-zoom shadow-box" />
           </div>
           <div className="col-lg-6">
-            <table class="table table-light table-striped table-hover border-rounded table-stats shadow-box">
+            <table class="table table-light table-striped table-hover border-rounded table-stats hover-zoom shadow-box">
               <thead class="table-dark">
                 <tr>
                   <th colspan="2">Características</th>
