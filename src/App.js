@@ -77,7 +77,7 @@ function App() {
           <Section>
             <Contact />
           </Section>
-        </section>    
+        </section>
       </div>
     </div>
   );
