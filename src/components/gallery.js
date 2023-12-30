@@ -26,7 +26,7 @@ const Gallery = () => {
     <div>
       <h2 className="color-transition">GALERÍA</h2>
       <div className="row gy-5">
-        <div id="gallery2023" className="carousel slide col-lg-4" data-bs-ride="carousel">
+        <div id="gallery2023" className="carousel slide col-lg-3" data-bs-ride="carousel">
           <div className="carousel-inner border-rounded shadow-box">
             <div className="carousel-item active">
               <img src="/images/Liana_Main_2023.JPG" className="d-block w-100" alt="Liana 2023" />
@@ -54,7 +54,7 @@ const Gallery = () => {
               <span>
                 <button
                   type="button"
-                  class="btn btn-danger btn-sm mt-3"
+                  class="btn btn-danger btn-sm mt-3 hover-zoom"
                   onClick={() =>
                     descargarImagenes(
                       [
@@ -74,7 +74,7 @@ const Gallery = () => {
           </div>
         </div>
 
-        <div id="gallery2022" className="carousel slide col-lg-4" data-bs-ride="carousel">
+        <div id="gallery2022" className="carousel slide col-lg-3" data-bs-ride="carousel">
           <div className="carousel-inner border-rounded shadow-box">
             <div className="carousel-item active">
               <img src="/images/Liana_2022.png" className="d-block w-100" alt="Liana 2022" />
@@ -102,7 +102,7 @@ const Gallery = () => {
               <span>
                 <button
                   type="button"
-                  class="btn btn-danger btn-sm mt-3"
+                  class="btn btn-danger btn-sm mt-3 hover-zoom"
                   onClick={() =>
                     descargarImagenes(
                       [
@@ -122,19 +122,19 @@ const Gallery = () => {
           </div>
         </div>
 
-        <div id="gallery2021" className="carousel slide col-lg-4" data-bs-ride="carousel">
+        <div id="gallery2021" className="carousel slide col-lg-3" data-bs-ride="carousel">
           <div className="carousel-inner border-rounded shadow-box">
             <div className="carousel-item active">
-              <img src="/images/Liana_Cliff_2021.JPG" className="d-block w-100" alt="Liana 2022" />
+              <img src="/images/Liana_Cliff_2021.JPG" className="d-block w-100" alt="Liana 2021" />
             </div>
             <div className="carousel-item">
-              <img src="/images/Liana_Cliff_2021_1.JPG" className="d-block w-100" alt="Liana 2022" />
+              <img src="/images/Liana_Cliff_2021_1.JPG" className="d-block w-100" alt="Liana 2021" />
             </div>
             <div className="carousel-item">
-              <img src="/images/Liana_Cliff_2021_2.JPG" className="d-block w-100" alt="Liana 2022" />
+              <img src="/images/Liana_Cliff_2021_2.JPG" className="d-block w-100" alt="Liana 2021" />
             </div>
             <div className="carousel-item">
-              <img src="/images/Liana_Cliff_2021_3.JPG" className="d-block w-100" alt="Liana 2022" />
+              <img src="/images/Liana_Cliff_2021_3.JPG" className="d-block w-100" alt="Liana 2021" />
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#gallery2021" data-bs-slide="prev">
@@ -150,7 +150,7 @@ const Gallery = () => {
               <span>
                 <button
                   type="button"
-                  class="btn btn-danger btn-sm mt-3"
+                  class="btn btn-danger btn-sm mt-3 hover-zoom"
                   onClick={() =>
                     descargarImagenes(
                       [
@@ -169,6 +169,51 @@ const Gallery = () => {
             </Tooltip>
           </div>
         </div>
+
+        <div id="gallery2021_beach" className="carousel slide col-lg-3" data-bs-ride="carousel">
+          <div className="carousel-inner border-rounded shadow-box">
+            <div className="carousel-item active">
+              <img src="/images/Liana_Beach_2021.JPG" className="d-block w-100" alt="Liana 2021" />
+            </div>
+            <div className="carousel-item">
+              <img src="/images/Liana_Beach_2021_2.JPG" className="d-block w-100" alt="Liana 2021" />
+            </div>
+            <div className="carousel-item">
+              <img src="/images/Liana_Beach_2021_3.JPG" className="d-block w-100" alt="Liana 2021" />
+            </div>
+          </div>
+          <button className="carousel-control-prev" type="button" data-bs-target="#gallery2021_beach" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button className="carousel-control-next" type="button" data-bs-target="#gallery2021_beach" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+          </button>
+          <div class="d-flex justify-content-center">
+            <Tooltip title="Descargar catálogo 2021" placement="bottom" arrow>
+              <span>
+                <button
+                  type="button"
+                  class="btn btn-danger btn-sm mt-3 hover-zoom"
+                  onClick={() =>
+                    descargarImagenes(
+                      [
+                        '/images/Liana_Beach_2021.JPG',
+                        '/images/Liana_Beach_2021_2.JPG',
+                        '/images/Liana_Beach_2021_3.JPG',
+                      ],
+                      'Liana_2021'
+                    )
+                  }
+                >
+                  <i class='fas fa-download'></i>
+                </button>
+              </span>
+            </Tooltip>
+          </div>
+        </div>
+
       </div>
     </div>
   );
