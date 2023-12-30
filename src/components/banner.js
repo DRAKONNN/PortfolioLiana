@@ -10,11 +10,10 @@ import { Container, Row, Col } from 'react-bootstrap';
 const Banner = () => {
   return (
     <header className="banner">
-      <div className="bg-image">
-        
+      <div className="bg-image"> 
         <div className="container-fluid">
           <div className="row gy-5">
-              <h1 className="animated-text-right">LIANA</h1>
+              <h1 className="animated-text-right">LIANAA</h1>
               <h1 className="animated-text-left">UNANYAN</h1>
           </div>
         </div>
