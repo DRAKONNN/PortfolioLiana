@@ -25,24 +25,7 @@ function Contact(props) {
           </div>
       </div>
 
-      <footer className="text-center py-5 mt-5 footer-custom">
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-6 col-md">
-            <h5><i class='fas fa-map-marker-alt'></i> Madrid, 28006, España</h5>
-          </div>
-          <div className="col-6 col-md">
-            <h5><a href="tel:+34646155309"><i class='fas fa-phone-square'></i> 646 155 309</a></h5>
-          </div>
-          <div className="col-6 col-md">
-            <h5><a href="mailto:lianchik.9968@gmail.com"><i class='fas fa-envelope-square'></i>lianchik.9968@gmail.com</a></h5>
-          </div>
-          <div className="col-6 col-md">
-            <h5><a href="https://www.instagram.com/liaanaa8/"><i class='fab fa-instagram'></i> @liaanaa8</a></h5>
-          </div>
-        </div>
-        </div>
-      </footer>
+      
     </div>
   );
 }
