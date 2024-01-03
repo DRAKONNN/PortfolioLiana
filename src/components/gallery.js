@@ -8,9 +8,11 @@ import Tooltip from '@mui/material/Tooltip';
 
 import html2canvas from 'html2canvas';
 
+import JSZip from 'jszip';
+
 const Gallery = () => {
 
-  const descargarImagenes = (imagenesUrls, nombreCatalogo) => {
+  const descargarImagenes1 = (imagenesUrls, nombreCatalogo) => {
     // Itera sobre las URLs y descarga cada imagen
     imagenesUrls.forEach((url, index) => {
       const link = document.createElement('a');
@@ -20,6 +22,38 @@ const Gallery = () => {
       link.click();
       document.body.removeChild(link);
     });
+  };
+
+  const descargarImagenes = (imagenesUrls, nombreCatalogo) => {
+    const zip = new JSZip();
+    const descargas = [];
+  
+    // Itera sobre las URLs y agrega cada imagen al archivo ZIP
+    imagenesUrls.forEach((url, index) => {
+      const filename = `${nombreCatalogo}_${index + 1}.jpg`;
+  
+      // Crea una promesa para descargar cada imagen
+      const descarga = fetch(url)
+        .then((response) => response.blob())
+        .then((blob) => zip.file(filename, blob));
+  
+      // Agrega la promesa al array de descargas
+      descargas.push(descarga);
+    });
+  
+    // Espera a que todas las descargas se completen antes de generar el archivo ZIP
+    Promise.all(descargas)
+      .then(() => {
+        // Crea el archivo ZIP y descarga
+        zip.generateAsync({ type: 'blob' }).then((content) => {
+          const link = document.createElement('a');
+          link.href = URL.createObjectURL(content);
+          link.download = `${nombreCatalogo}.zip`;
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        });
+      });
   };
 
   return (
@@ -203,7 +237,7 @@ const Gallery = () => {
                         '/images/Liana_Beach_2021_2.JPG',
                         '/images/Liana_Beach_2021_3.JPG',
                       ],
-                      'Liana_2021'
+                      'Liana_2021_1'
                     )
                   }
                 >
