@@ -9,7 +9,7 @@ function Contact(props) {
   
   return (
     <div className="">
-      <h2 className="color-transition">CONTACTO</h2>
+      <h2 className="color-transition mb-4 mt-4">CONTACTO</h2>
       <div className="row gy-5">  
           <div className="col-lg-3">
             <img src="/images/Liana_2021.JPG" alt="Liana" className="border-rounded img-fluid hover-zoom shadow-box" />
