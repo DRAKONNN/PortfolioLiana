@@ -72,6 +72,7 @@ function Contact(props) {
           </form>
         </div>
       </div>
+      
       <div className={`toast align-items-center text-white bg-success border-0 ${showToastSuccess ? 'show' : ''}`} role="alert" aria-live="assertive" aria-atomic="true">
         <div className="d-flex">
           <div className="toast-body">
