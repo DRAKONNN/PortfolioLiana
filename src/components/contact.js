@@ -62,10 +62,10 @@ function Contact(props) {
   };
 
   const sendEmail = (e) => {
-    setShowToastEmpty(true);
     e.preventDefault();
 
     if (!validateForm()) {
+      setShowToastEmpty(true);
       return;
     }
 
@@ -125,28 +125,32 @@ function Contact(props) {
         </div>
       </div>
       
-      <div className={`toast align-items-center text-white bg-success border-0 ${showToastSuccess ? 'show' : ''}`} role="alert" aria-live="assertive" aria-atomic="true">
-        <div className="d-flex">
-          <div className="toast-body">
-            ¡Email Enviado correctamente! Se le contestará lo antes posible.
+      <div aria-live="polite" aria-atomic="true" class="position-relative">
+        <div class="toast-container position-absolute top-0 end-0 p-3">
+          <div className={`toast toast-custom align-items-center text-white bg-success border-0 ${showToastSuccess ? 'show' : ''}`} role="alert" aria-live="assertive" aria-atomic="true">
+            <div className="d-flex">
+              <div className="toast-body">
+                ¡Email Enviado correctamente! Se le contestará lo antes posible.
+              </div>
+              <button type="button" className="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" onClick={() => setShowToastSuccess(false)}></button>
+            </div>
           </div>
-          <button type="button" className="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" onClick={() => showToastSuccess(false)}></button>
-        </div>
-      </div>
-      <div className={`toast align-items-center text-white bg-danger border-0 ${showToastError ? 'show' : ''}`} role="alert" aria-live="assertive" aria-atomic="true">
-        <div className="d-flex">
-          <div className="toast-body">
-            ¡Error al enviar el correo! Intente enviar otra vez en un rato después de haber refrescado la página.
+          <div className={`toast align-items-center text-white bg-danger border-0 ${showToastError ? 'show' : ''}`} role="alert" aria-live="assertive" aria-atomic="true">
+            <div className="d-flex">
+              <div className="toast-body">
+                ¡Error al enviar el correo! Intente enviar otra vez en un rato después de haber refrescado la página.
+              </div>
+              <button type="button" className="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" onClick={() => setShowToastError(false)}></button>
+            </div>
           </div>
-          <button type="button" className="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" onClick={() => setShowToastError(false)}></button>
-        </div>
-      </div>
-      <div className={`toast align-items-center text-white bg-danger border-0 ${showToastEmpty ? 'show' : ''}`} role="alert" aria-live="assertive" aria-atomic="true">
-        <div className="d-flex">
-          <div className="toast-body">
-            Complete todos los campos, por favor.
+          <div className={`toast align-items-center text-white bg-danger border-0 ${showToastEmpty ? 'show' : ''}`} role="alert" aria-live="assertive" aria-atomic="true">
+            <div className="d-flex">
+              <div className="toast-body">
+                Complete todos los campos, por favor.
+              </div>
+              <button type="button" className="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" onClick={() => setShowToastEmpty(false)}></button>
+            </div>
           </div>
-          <button type="button" className="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" onClick={() => setShowToastEmpty(false)}></button>
         </div>
       </div>
     </div>
