@@ -85,22 +85,21 @@ function Contact(props) {
     <div className="">
       <h2 className="color-transition mb-4 mt-4">CONTACTO</h2>
       <div className="row gy-5">
-
-        <div class="card col-lg-3 bg-dark text-white hover-zoom shadow-box">
-          <img src="/images/Liana_2021.JPG" alt="Liana" className="border-rounded img-fluid" style={{opacity: 0.5}} />
-          <div class="card-img-overlay">
-            <h3 className="mt-4"><i class="fas fa-map-marker-alt"></i> Madrid, 28006, España</h3>
-            <h3 className="mt-4"><a href="tel:+34646155309" class="link-light"><i class='fas fa-phone-square'></i> 646 155 309</a></h3>
+        <div class="card col-lg-3 ms-3 me-3 bg-dark text-white hover-zoom shadow-box p-0">
+          <div className="card-img-wrapper">
+            <img src="/images/Liana_2021.JPG" alt="Liana" className="border-rounded img-fluid" style={{opacity: 0.5}} />
+          </div>
+          <div class="card-img-overlay d-flex flex-column justify-content-between">
+            <h3 className="mt-4"><i className="fas fa-map-marker-alt"></i> Madrid, 28006, España</h3>
+            <h3 className=""><a href="tel:+34646155309" className="link-light"><i class='fas fa-phone-square'></i> 646 155 309</a></h3>
           </div>
         </div>
-        <div class="card col-lg-3 bg-dark text-white hover-zoom shadow-box">
-          <img src="/images/Liana_2020_3.JPG" alt="Liana" className="border-rounded img-fluid hover-zoom shadow-box" />
-          <div class="card-img-overlay">
-            <h1 className="mt-4"><a href="https://www.instagram.com/liaanaa8/"><i class='fab fa-instagram'></i> @liaanaa8</a></h1>
-          </div>
+        
+        <div class="col-lg-3 me-3 text-white img-zoom shadow-box p-0 contact-custom">
+          <a href="tel:+34646155309"><img src="/images/Liana_Instagram.JPG" alt="Liana" className="border-rounded img-fluid" style={{opacity: 0.5}} /></a>
         </div>
       
-        <div className="col-lg-6">
+        <div className="col-lg-5">
           <form ref={form} onSubmit={sendEmail}>
             <div className="mb-3">
               <label className="form-label custom-text-left">
@@ -120,7 +119,7 @@ function Contact(props) {
               </label>
               <textarea className="form-control" placeholder="Texto" name="message" value={formData.message} onChange={handleChange}></textarea>
             </div>
-            <button type="submit" value="Send" className="btn btn-primary">
+            <button type="submit" value="Send" className="btn btn-danger">
               Enviar
             </button>
           </form>

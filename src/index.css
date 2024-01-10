@@ -58,6 +58,10 @@ form {
   background-color: #272626;
 }
 
+.contact-custom {
+  max-height: 750px;
+}
+
 /*
 * =====Animations=====
 */
@@ -165,6 +169,19 @@ form {
   transform: scale(1.05);
 }
 
+.img-zoom {
+  border-radius: 3px;
+  overflow: hidden;
+  z-index:1;
+}
+
+.img-zoom img {
+  transition: transform 0.3s;
+}
+
+.img-zoom img:hover {
+  transform: scale(1.2);
+}
 
 .container-stats {
   max-height: 400px;
