@@ -95,31 +95,35 @@ function Contact(props) {
           </div>
         </div>
         
-        <div class="col-lg-3 me-3 text-white img-zoom shadow-box p-0 contact-custom">
-          <a href="tel:+34646155309"><img src="/images/Liana_Instagram.JPG" alt="Liana" className="border-rounded img-fluid" style={{opacity: 0.5}} /></a>
+        <div class="col-lg-3 me-3 img-zoom shadow-box p-0 contact-custom position-relative">
+          <a href="https://www.instagram.com/liaanaa8/">
+            <img src="/images/Liana_Instagram.JPG" alt="Liana" className="border-rounded img-fluid" style={{opacity: 0.5}} />
+            <h4 class="text-center color-transition-insta position-absolute top-50 start-50 translate-middle m-0"><i class='fab fa-instagram'></i> Abrir mi Instagram</h4>
+          </a>
         </div>
       
-        <div className="col-lg-5">
+        <div className="col-lg-5 bg-form border border-danger border-rounded shadow-box">
           <form ref={form} onSubmit={sendEmail}>
             <div className="mb-3">
-              <label className="form-label custom-text-left">
+              <h3 className="text-light mt-1">Envíame un correo</h3>
+              <label className="form-label text-light custom-text-left">
                 Nombre del remitente
               </label>
               <input type="text" className="form-control" placeholder="Nombre" name="user_name" value={formData.user_name} onChange={handleChange} />
             </div>
             <div className="mb-3">
-              <label className="form-label">
+              <label className="form-label text-light">
                 Email del remitente
               </label>
               <input type="email" className="form-control" placeholder="name@example.com" name="user_email" value={formData.user_email} onChange={handleChange} />
             </div>
             <div className="mb-3">
-              <label className="form-label">
+              <label className="form-label text-light">
                 Mensaje de texto
               </label>
-              <textarea className="form-control" placeholder="Texto" name="message" value={formData.message} onChange={handleChange}></textarea>
+              <textarea className="form-control" placeholder="Texto" name="message" value={formData.message} onChange={handleChange} style={{ maxHeight: '200px' }}></textarea>
             </div>
-            <button type="submit" value="Send" className="btn btn-danger">
+            <button type="submit" value="Send" className="btn btn-danger mb-1">
               Enviar
             </button>
           </form>
