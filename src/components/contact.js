@@ -85,7 +85,7 @@ function Contact(props) {
     <div className="">
       <h2 className="color-transition mb-4 mt-4">CONTACTO</h2>
       <div className="row gy-5">
-        <div class="card col-lg-3 ms-3 me-3 bg-dark text-white hover-zoom shadow-box p-0">
+        <div class="card col-lg-3 me-3 bg-dark text-white hover-zoom shadow-box p-0">
           <div className="card-img-wrapper">
             <img src="/images/Liana_2021.JPG" alt="Liana" className="border-rounded img-fluid" style={{opacity: 0.5}} />
           </div>

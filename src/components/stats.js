@@ -17,7 +17,7 @@ function Stats(props) {
     <div className="">
       <h2 className="color-transition mb-4 mt-4">SOBRE MÍ</h2>
       <div className="row gy-5">  
-        <div className="col-lg-3 ms-4 me-3">
+        <div className="col-lg-3 me-3">
           <table class="table table-light table-striped table-hover border-rounded table-stats hover-zoom shadow-box">
             <thead class="table-dark">
               <tr>
