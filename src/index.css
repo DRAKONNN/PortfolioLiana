@@ -55,6 +55,10 @@ form {
   background-color: #353535;
 }
 
+.form-custom {
+  max-height: 600px;
+}
+
 .footer-custom {
   position: relative;
   max-width: 100%;

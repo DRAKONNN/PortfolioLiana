@@ -102,10 +102,10 @@ function Contact(props) {
           </a>
         </div>
       
-        <div className="col-lg-5 bg-form border border-danger border-rounded shadow-box">
+        <div className="col-lg-5 bg-form form-custom border border-danger border-rounded shadow-box">
           <form ref={form} onSubmit={sendEmail}>
             <div className="mb-3">
-              <h3 className="text-light mt-1">Envíame un correo</h3>
+              <h3 className="text-light mt-2">Envíame un correo</h3>
               <label className="form-label text-light custom-text-left">
                 Nombre del remitente
               </label>
