@@ -8,6 +8,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 
 const Banner = () => {
+
   return (
     <header className="banner">
       <div className="bg-image"> 

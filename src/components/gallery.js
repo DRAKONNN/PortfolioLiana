@@ -58,7 +58,7 @@ const Gallery = () => {
 
   return (
     <div>
-      <h2 className="color-transition mb-4">GALERÍA</h2>
+      <h2 className="color-transition mt-2 mb-5">GALERÍA</h2>
       <div className="row gy-5">
         <div id="gallery2023" className="carousel slide col-lg-3" data-bs-ride="carousel">
           <div className="carousel-inner border-rounded shadow-box">

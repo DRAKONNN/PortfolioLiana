@@ -83,7 +83,7 @@ function Contact(props) {
 
   return (
     <div className="">
-      <h2 className="color-transition mb-4 mt-4">CONTACTO</h2>
+      <h2 className="color-transition mb-5 mt-5">CONTACTO</h2>
       <div className="row gy-5">
         <div class="card col-lg-3 me-3 bg-dark text-white hover-zoom shadow-box p-0">
           <div className="card-img-wrapper">
@@ -121,7 +121,7 @@ function Contact(props) {
               <label className="form-label text-light">
                 Mensaje de texto
               </label>
-              <textarea className="form-control" placeholder="Texto" name="message" value={formData.message} onChange={handleChange} style={{ maxHeight: '200px' }}></textarea>
+              <textarea className="form-control" placeholder="Texto" name="message" value={formData.message} onChange={handleChange} style={{ maxHeight: '150px' }}></textarea>
             </div>
             <button type="submit" value="Send" className="btn btn-danger mb-1">
               Enviar

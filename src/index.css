@@ -56,7 +56,7 @@ form {
 }
 
 .form-custom {
-  max-height: 600px;
+  max-height: 500px;
 }
 
 .footer-custom {
@@ -110,7 +110,7 @@ form {
 @media (max-width: 767px) {
   .animated-text-right,
   .animated-text-left {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 }
 
