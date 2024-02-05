@@ -62,8 +62,8 @@ function Stats(props) {
           <div className="text-center position-absolute top-50 start-50 translate-middle m-0">
             <h4 className="mb-3">IDIOMAS</h4>
             <div className="text-start">
-              <h6>Ruso: <span class="badge bg-danger">bilingüe</span></h6>
-              <h6>Español: <span class="badge bg-danger">bilingüe</span></h6>
+              <h6>Ruso: <span class="badge bg-danger">nativo</span></h6>
+              <h6>Español: <span class="badge bg-danger">nativo</span></h6>
               <h6>Inglés: <span class="badge bg-primary">C1</span></h6>
               <h6>Catalán: <span class="badge bg-primary">C1</span></h6>
             </div>
@@ -75,7 +75,7 @@ function Stats(props) {
           <div className="text-center position-absolute top-50 start-50 translate-middle m-0">
             <h4 className="mb-3">FORMACIÓN</h4>
             <div className="text-start">
-              <h6 class="">Grado de Derecho</h6>
+              <h6 class="">Grado en Derecho</h6>
               <p className="mb-1">Universidad Rovira I Virgili (URV)</p>
               <p><small>2017 – 2021</small></p>
               <h6 class="">Máster en Sistema de Justicia Penal</h6>

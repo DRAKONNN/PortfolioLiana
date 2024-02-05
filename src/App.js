@@ -84,16 +84,7 @@ function App() {
           <div className="container-fluid">
             <div className="row">
               <div className="col-6 col-md mb-1 link-danger">
-                <h6><i class='fas fa-map-marker-alt'></i> Madrid, 28006, España</h6>
-              </div>
-              <div className="col-6 col-md mb-1">
-                <h6><a href="tel:+34646155309" className="link-danger"><i class='fas fa-phone-square'></i> 646 155 309</a></h6>
-              </div>
-              <div className="col-6 col-md mb-1">
-                <h6><a href="mailto:lianchik.9968@gmail.com" className="link-danger"><i class='fas fa-envelope-square'></i>lianchik.9968@gmail.com</a></h6>
-              </div>
-              <div className="col-6 col-md mb-1">
-                <h6><a href="https://www.instagram.com/liaanaa8/" className="link-danger"><i class='fab fa-instagram'></i> @liaanaa8</a></h6>
+                <h6><i class='fab fa-creative-commons'></i> Desarrollado por Rafael Khismatulin</h6>
               </div>
             </div>
           </div>
